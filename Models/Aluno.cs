@@ -10,9 +10,8 @@ namespace AlunosApi.Models
         public string Nome { get; set; }
         [Required]
         [StringLength(100)]
-        public string Email { get; set; }
-        [Required]
         [EmailAddress]
+        public string Email { get; set; }
         public int Idade { get; set; }
     }
 }
